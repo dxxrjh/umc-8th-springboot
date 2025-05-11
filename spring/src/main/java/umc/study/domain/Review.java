@@ -9,8 +9,9 @@ import java.time.LocalDateTime;
 
 @Entity
 @Getter
+@Setter
 @Builder
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@NoArgsConstructor
 @AllArgsConstructor
 public class Review extends BaseEntity {
 

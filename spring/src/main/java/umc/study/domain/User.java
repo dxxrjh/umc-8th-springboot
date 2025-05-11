@@ -58,4 +58,18 @@ public class User extends BaseEntity {
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     private List<userMission> userMissions = new ArrayList<>();
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name=" + name +
+                ", gender=" + gender +
+                ", birthday=" + birthday +
+                ", address=" + address +
+                ", email=" + email +
+                ", phoneNumber=" + phoneNumber +
+                ", point=" + point +
+                '}';
+    }
+
 }

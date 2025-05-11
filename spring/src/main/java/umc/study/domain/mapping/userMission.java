@@ -30,4 +30,25 @@ public class userMission extends BaseEntity {
     @JoinColumn(name = "mission_id")
     private Mission mission;
 
+    // user에 대한 getter 추가
+    public User getUser() {
+        return user;
+    }
+
+    // mission에 대한 getter 추가
+    public Mission getMission() {
+        return mission;
+    }
+
+    @Override
+    public String toString() {
+        return "UserMission{" +
+                "id=" + id +
+                ", status=" + status +
+                ", userId=" + (user != null ? user.getId() : null) +
+                ", mission=" + (mission != null ? mission.getDueDate() + ", " + mission.getDescription()+ ", " + mission.getPoint()+ ", " + mission.getRestaurant() : null) +
+                '}';
+    }
+
+
 }
