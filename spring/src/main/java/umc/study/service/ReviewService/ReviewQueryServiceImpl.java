@@ -2,7 +2,7 @@ package umc.study.service.ReviewService;
 
 import umc.study.domain.Restaurant;
 import umc.study.domain.User;
-import umc.study.dto.ReviewDTO;
+import umc.study.web.dto.ReviewDTO;
 import umc.study.repository.RestaurantRepository.RestaurantRepository;
 import umc.study.repository.ReviewRepository.ReviewRepository;
 import umc.study.repository.UserRepository.UserRepository; // UserRepository import 추가

@@ -3,24 +3,13 @@ package umc.study;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cglib.core.Local;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
-import umc.study.domain.Review;
-import umc.study.domain.mapping.userMission;
-import umc.study.dto.ReviewDTO;
-import umc.study.service.MissionService.MissionQueryService;
-import umc.study.service.RestaurantService.RestaurantQueryService;
+import umc.study.web.dto.ReviewDTO;
 import umc.study.service.ReviewService.ReviewQueryService;
-import umc.study.service.UserMissionService.UserMissionQueryService;
-import umc.study.service.UserService.UserQueryService;
 
 import java.math.BigDecimal;
-import java.time.LocalDate;
-import java.time.ZoneId;
-import java.util.Date;
-import java.util.List;
 
 @SpringBootApplication
 @EnableJpaAuditing

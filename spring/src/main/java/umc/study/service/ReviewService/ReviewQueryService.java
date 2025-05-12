@@ -1,7 +1,7 @@
 package umc.study.service.ReviewService;
 
 import umc.study.domain.Review;
-import umc.study.dto.ReviewDTO;
+import umc.study.web.dto.ReviewDTO;
 
 import java.util.List;
 

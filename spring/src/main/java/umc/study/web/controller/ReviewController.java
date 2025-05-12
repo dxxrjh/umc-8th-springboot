@@ -1,6 +1,6 @@
-package umc.study.controller;
+package umc.study.web.controller;
 
-import umc.study.dto.ReviewDTO;
+import umc.study.web.dto.ReviewDTO;
 import umc.study.service.ReviewService.ReviewQueryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
