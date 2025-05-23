@@ -1,11 +1,13 @@
 package umc.study.service.ReviewService;
 
+import jakarta.validation.Valid;
 import umc.study.domain.Review;
-import umc.study.web.dto.ReviewDTO;
+import umc.study.web.dto.ReviewRequestDTO;
 
 import java.util.List;
 
 public interface ReviewQueryService {
-    Review createReview(ReviewDTO reviewDTO);
-    List<Review> getReviewsByShop(Long restaurantId);
+
+    Review createReview(ReviewRequestDTO.@Valid ReviewWritingDTO request, Long restaurantId);
+    List<Review> getReviewsByRestaurant(Long restaurantId);
 }

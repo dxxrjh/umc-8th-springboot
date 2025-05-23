@@ -11,16 +11,16 @@ import com.querydsl.core.types.dsl.PathInits;
 
 
 /**
- * QuserMission is a Querydsl query type for userMission
+ * QUserMission is a Querydsl query type for UserMission
  */
 @Generated("com.querydsl.codegen.DefaultEntitySerializer")
-public class QuserMission extends EntityPathBase<userMission> {
+public class QUserMission extends EntityPathBase<UserMission> {
 
-    private static final long serialVersionUID = -2106235393L;
+    private static final long serialVersionUID = -438366753L;
 
     private static final PathInits INITS = PathInits.DIRECT2;
 
-    public static final QuserMission userMission = new QuserMission("userMission");
+    public static final QUserMission userMission = new QUserMission("userMission");
 
     public final umc.study.domain.common.QBaseEntity _super = new umc.study.domain.common.QBaseEntity(this);
 
@@ -38,23 +38,23 @@ public class QuserMission extends EntityPathBase<userMission> {
 
     public final umc.study.domain.QUser user;
 
-    public QuserMission(String variable) {
-        this(userMission.class, forVariable(variable), INITS);
+    public QUserMission(String variable) {
+        this(UserMission.class, forVariable(variable), INITS);
     }
 
-    public QuserMission(Path<? extends userMission> path) {
+    public QUserMission(Path<? extends UserMission> path) {
         this(path.getType(), path.getMetadata(), PathInits.getFor(path.getMetadata(), INITS));
     }
 
-    public QuserMission(PathMetadata metadata) {
+    public QUserMission(PathMetadata metadata) {
         this(metadata, PathInits.getFor(metadata, INITS));
     }
 
-    public QuserMission(PathMetadata metadata, PathInits inits) {
-        this(userMission.class, metadata, inits);
+    public QUserMission(PathMetadata metadata, PathInits inits) {
+        this(UserMission.class, metadata, inits);
     }
 
-    public QuserMission(Class<? extends userMission> type, PathMetadata metadata, PathInits inits) {
+    public QUserMission(Class<? extends UserMission> type, PathMetadata metadata, PathInits inits) {
         super(type, metadata, inits);
         this.mission = inits.isInitialized("mission") ? new umc.study.domain.QMission(forProperty("mission"), inits.get("mission")) : null;
         this.user = inits.isInitialized("user") ? new umc.study.domain.QUser(forProperty("user")) : null;

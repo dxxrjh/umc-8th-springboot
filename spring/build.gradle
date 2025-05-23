@@ -41,6 +41,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.5.0'
+
 	runtimeOnly 'com.mysql:mysql-connector-j'
 
 	// ✅ QueryDSL 5.x (Jakarta 기반)
@@ -49,6 +51,7 @@ dependencies {
 	annotationProcessor 'jakarta.annotation:jakarta.annotation-api:2.1.1'
 	annotationProcessor 'jakarta.persistence:jakarta.persistence-api:3.1.0'
 
+
 	// Lombok
 	compileOnly 'org.projectlombok:lombok:1.18.22'
 	annotationProcessor 'org.projectlombok:lombok:1.18.22'
@@ -56,7 +59,6 @@ dependencies {
 	// 기타
 	implementation 'org.hibernate:hibernate-core:6.0.0.Final'
 	implementation 'org.springdoc:springdoc-openapi-ui:1.6.9'
-	implementation 'org.springdoc:springdoc-openapi-data-rest:1.6.9'
 
 	// JUnit 5 의존성 (spring-boot-starter-test에 포함되어 있으므로 제거)
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'

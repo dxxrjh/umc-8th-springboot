@@ -1,10 +1,10 @@
 package umc.study.repository.UserMissionRepository;
 
-import umc.study.domain.mapping.userMission;
+import umc.study.domain.mapping.UserMission;
 
 import java.util.List;
 
 
 public interface UserMissionRepositoryCustom {
-    List<userMission> dynamicQueryWithBooleanBuilder(long id, String status);
+    List<UserMission> dynamicQueryWithBooleanBuilder(long id, String status);
 }

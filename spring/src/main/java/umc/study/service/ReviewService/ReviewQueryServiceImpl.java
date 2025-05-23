@@ -1,14 +1,18 @@
 package umc.study.service.ReviewService;
 
+import umc.study.apiPayload.code.status.ErrorStatus;
+import umc.study.apiPayload.exception.handler.LocationHandler;
+import umc.study.apiPayload.exception.handler.RestaurantHandler;
 import umc.study.domain.Restaurant;
 import umc.study.domain.User;
-import umc.study.web.dto.ReviewDTO;
 import umc.study.repository.RestaurantRepository.RestaurantRepository;
+import umc.study.web.dto.ReviewRequestDTO;
 import umc.study.repository.ReviewRepository.ReviewRepository;
 import umc.study.repository.UserRepository.UserRepository; // UserRepository import 추가
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import umc.study.domain.Review;
+import umc.study.converter.ReviewConverter;
 
 import java.util.List;
 
@@ -27,24 +31,24 @@ public class ReviewQueryServiceImpl implements ReviewQueryService {
     }
 
     @Override
-    public Review createReview(ReviewDTO reviewDTO) {
-        Review review = new Review();
-        review.setContent(reviewDTO.getContent());
-        review.setRate(reviewDTO.getRate());
+    public Review createReview(ReviewRequestDTO.ReviewWritingDTO request, Long restaurantId) {
 
-        User user = userRepository.findById(reviewDTO.getUserId())
-                .orElseThrow(() -> new IllegalArgumentException("사용자를 찾을 수 없습니다."));
-        review.setUser(user);  // User 객체를 Review에 설정
+        User user = userRepository.findById(1L)
+                .orElseThrow(() -> new RuntimeException("User not found"));
 
-        Restaurant restaurant = restaurantRepository.findById(reviewDTO.getRestaurantId())  // restaurantId로 Restaurant 객체 찾기
-                .orElseThrow(() -> new IllegalArgumentException("레스토랑을 찾을 수 없습니다."));
-        review.setRestaurant(restaurant);  // Restaurant 객체를 Review에 설정
+        Restaurant restaurant = restaurantRepository.findById(restaurantId)
+                .orElseThrow(() -> new RestaurantHandler(ErrorStatus.RESTAURANT_NOT_FOUND));
 
+        Review review = ReviewConverter.toReview(request, user, restaurant);
         return reviewRepository.save(review);
     }
 
     @Override
-    public List<Review> getReviewsByShop(Long restaurantId) {
+    public List<Review> getReviewsByRestaurant(Long restaurantId) {
+        restaurantRepository.findById(restaurantId)
+                .orElseThrow(() -> new RestaurantHandler(ErrorStatus.RESTAURANT_NOT_FOUND));
+
         return reviewRepository.findReviewsByRestaurantId(restaurantId);
     }
+
 }

@@ -3,10 +3,9 @@ package umc.study.domain;
 import jakarta.persistence.*;
 import lombok.*;
 import umc.study.domain.common.BaseEntity;
-import umc.study.domain.mapping.userMission;
+import umc.study.domain.mapping.UserMission;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,7 +32,7 @@ public class Mission extends BaseEntity {
     private Restaurant restaurant;
 
     @OneToMany(mappedBy = "mission", cascade = CascadeType.ALL)
-    private List<userMission> userMissions = new ArrayList<>();
+    private List<UserMission> UserMissions = new ArrayList<>();
 
     @Override
     public String toString() {

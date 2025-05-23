@@ -2,19 +2,22 @@ package umc.study.domain;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.DynamicInsert;
+import org.hibernate.annotations.DynamicUpdate;
 import umc.study.domain.common.BaseEntity;
 import umc.study.domain.enums.Gender;
 import umc.study.domain.enums.Status;
 import umc.study.domain.mapping.Preference;
-import umc.study.domain.mapping.userMission;
+import umc.study.domain.mapping.UserMission;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 @Entity
 @Getter
+@DynamicUpdate
+@DynamicInsert
 @Builder
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
@@ -35,12 +38,13 @@ public class User extends BaseEntity {
     @Column(nullable = false, length = 40)
     private String address;
 
-    @Column(nullable = false, length = 50)
+    //@Column(nullable = false, length = 50)
     private String email;
 
-    @Column(nullable = false, length = 20)
+    @Column(name = "phone_number", nullable = false, length = 20)
     private String phoneNumber;
 
+    @Column(columnDefinition = "DEFAULT 0")
     private Integer point;
 
     @Enumerated(EnumType.STRING)
@@ -56,7 +60,7 @@ public class User extends BaseEntity {
     private List<Review> reviews;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-    private List<userMission> userMissions = new ArrayList<>();
+    private List<UserMission> UserMissions = new ArrayList<>();
 
     @Override
     public String toString() {

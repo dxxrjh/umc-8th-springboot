@@ -5,8 +5,8 @@ import com.querydsl.jpa.impl.JPAQueryFactory;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 import umc.study.domain.enums.MissionStatus;
-import umc.study.domain.mapping.QuserMission;
-import umc.study.domain.mapping.userMission;
+import umc.study.domain.mapping.QUserMission;
+import umc.study.domain.mapping.UserMission;
 
 import java.util.List;
 
@@ -14,10 +14,10 @@ import java.util.List;
 @RequiredArgsConstructor
 public class UserMissionRepositoryImpl implements UserMissionRepositoryCustom {
     private final JPAQueryFactory jpaQueryFactory;
-    private final QuserMission userMission = QuserMission.userMission;
+    private final QUserMission userMission = QUserMission.userMission;
 
     @Override
-    public List<userMission> dynamicQueryWithBooleanBuilder(long id, String status) {
+    public List<UserMission> dynamicQueryWithBooleanBuilder(long id, String status) {
         BooleanBuilder predicate = new BooleanBuilder();
 
         // id 조건 추가

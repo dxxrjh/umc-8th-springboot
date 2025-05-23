@@ -52,7 +52,7 @@ public class QUser extends EntityPathBase<User> {
     //inherited
     public final DateTimePath<java.time.LocalDateTime> updatedAt = _super.updatedAt;
 
-    public final ListPath<umc.study.domain.mapping.userMission, umc.study.domain.mapping.QuserMission> userMissions = this.<umc.study.domain.mapping.userMission, umc.study.domain.mapping.QuserMission>createList("userMissions", umc.study.domain.mapping.userMission.class, umc.study.domain.mapping.QuserMission.class, PathInits.DIRECT2);
+    public final ListPath<umc.study.domain.mapping.UserMission, umc.study.domain.mapping.QUserMission> UserMissions = this.<umc.study.domain.mapping.UserMission, umc.study.domain.mapping.QUserMission>createList("UserMissions", umc.study.domain.mapping.UserMission.class, umc.study.domain.mapping.QUserMission.class, PathInits.DIRECT2);
 
     public QUser(String variable) {
         super(User.class, forVariable(variable));

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="79735d20-6def-4ede-b345-42f354803972" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/umc/study/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/umc/study/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/umc/study/domain/Mission$MissionBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/umc/study/domain/Mission$MissionBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/umc/study/domain/Mission.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/umc/study/domain/Mission.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/umc/study/domain/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/umc/study/domain/User$UserBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/umc/study/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/umc/study/domain/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/umc/study/domain/enums/Gender.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/umc/study/domain/enums/Gender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/umc/study/domain/mapping/Preference.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/umc/study/domain/mapping/Preference.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/umc/study/domain/mapping/userMission$userMissionBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/umc/study/domain/mapping/userMission$userMissionBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/umc/study/domain/mapping/userMission.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/umc/study/domain/mapping/userMission.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/umc/spring/ApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/umc.spring.ApplicationTests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/umc.spring.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-umc.spring.ApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileQuerydsl/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/generated/umc/study/domain/QMission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/generated/umc/study/domain/QMission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/generated/umc/study/domain/QUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/generated/umc/study/domain/QUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/generated/umc/study/domain/mapping/QuserMission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/generated/umc/study/domain/mapping/QuserMission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/study/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/study/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/study/apiPayload/code/status/ErrorStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/study/apiPayload/code/status/ErrorStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/study/domain/Mission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/study/domain/Mission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/study/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/study/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/study/domain/enums/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/study/domain/enums/Gender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/study/domain/mapping/Preference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/study/domain/mapping/Preference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/study/domain/mapping/userMission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/study/domain/mapping/UserMission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/study/repository/UserMissionRepository/UserMissionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/study/repository/UserMissionRepository/UserMissionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/study/repository/UserMissionRepository/UserMissionRepositoryCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/study/repository/UserMissionRepository/UserMissionRepositoryCustom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/study/repository/UserMissionRepository/UserMissionRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/study/repository/UserMissionRepository/UserMissionRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/study/repository/UserRepository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/study/repository/UserRepository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/study/repository/UserRepository/UserRepositoryCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/study/repository/UserRepository/UserRepositoryCustom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/study/service/ReviewService/ReviewQueryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/study/service/ReviewService/ReviewQueryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/study/service/ReviewService/ReviewQueryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/study/service/ReviewService/ReviewQueryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/study/service/UserMissionService/UserMissionQueryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/study/service/UserMissionService/UserMissionQueryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/study/service/UserMissionService/UserMissionQueryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/study/service/UserMissionService/UserMissionQueryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/study/web/controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/study/web/controller/ReviewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umc/study/web/dto/ReviewDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umc/study/web/dto/ReviewRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="spring" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="spring" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="spring" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="AnnotationType" />
+        <option value="Class" />
+        <option value="Exception" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;dxxrjh&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/dxxrjh/umc-8th-springboot.git&quot;,
+    &quot;accountId&quot;: &quot;f9380c2a-0a6c-4c28-bd6a-3cc85bfad2b0&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2xJZxzXXkmwYxjRjQsAGlt7AcyL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.spring [build].executor": "Run",
+    "Gradle.spring 빌드.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.Application.executor": "Run",
+    "git-widget-placeholder": "week8",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "프로젝트",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="umc.study.validation.validator" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle build" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Gradle.spring [build]">
+    <configuration name="spring [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="spring.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="umc.study.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.spring [build]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435" />
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="79735d20-6def-4ede-b345-42f354803972" name="변경" comment="" />
+      <created>1747658387074</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1747658387074</updated>
+      <workItem from="1747658388128" duration="2597000" />
+      <workItem from="1747708062228" duration="35547000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/umc/study/web/controller/UserRestController.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
