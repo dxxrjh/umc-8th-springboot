@@ -17,17 +17,4 @@ public class MissionQueryServiceImpl implements MissionQueryService{
 
     private final MissionRepository MissionRepository;
 
-    @Override
-    public Optional<Mission> findMission(Long id) {
-        return MissionRepository.findById(id);
-    }
-
-    @Override
-    public List<Mission> findMissionsByLocationAndDueDate(String location , LocalDate dueDate) {
-        List<Mission> filteredMission = MissionRepository.dynamicQueryWithBooleanBuilder(location, dueDate);
-
-        filteredMission.forEach(Mission -> System.out.println("Mission: " + Mission));
-
-        return filteredMission;
-    }
 }

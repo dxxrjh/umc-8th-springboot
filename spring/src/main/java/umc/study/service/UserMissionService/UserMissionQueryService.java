@@ -1,5 +1,6 @@
 package umc.study.service.UserMissionService;
 
+import org.springframework.data.domain.Page;
 import umc.study.domain.mapping.UserMission;
 
 import java.util.List;
@@ -7,6 +8,5 @@ import java.util.Optional;
 
 public interface UserMissionQueryService {
 
-    Optional<UserMission> findUserMission(Long id);
-    List<UserMission> findUserMissionsByIdAndStatus(long id, String status);
+    Page<UserMission> getUserMissionList(long userId, String status, Integer page);
 }

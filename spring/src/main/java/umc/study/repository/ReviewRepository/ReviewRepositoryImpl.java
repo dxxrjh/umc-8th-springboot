@@ -13,12 +13,5 @@ public class ReviewRepositoryImpl implements ReviewRepositoryCustom {
     @PersistenceContext
     private EntityManager entityManager;
 
-    @Override
-    public List<Review> findReviewsByRestaurantId(Long restaurantId) {
-        String jpql = "SELECT r FROM Review r WHERE r.restaurant.id = :restaurantId";
-        TypedQuery<Review> query = entityManager.createQuery(jpql, Review.class);
-        query.setParameter("restaurantId", restaurantId);
-        return query.getResultList();
-    }
 }
 

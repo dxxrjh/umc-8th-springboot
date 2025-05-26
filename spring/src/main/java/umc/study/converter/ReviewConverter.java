@@ -1,17 +1,22 @@
 package umc.study.converter;
 
+import org.springframework.data.domain.Page;
+import umc.study.domain.Mission;
 import umc.study.domain.Restaurant;
 import umc.study.domain.Review;
 import umc.study.domain.User;
 import umc.study.domain.enums.Gender;
 import umc.study.web.dto.ReviewRequestDTO;
 import umc.study.web.dto.ReviewResponseDTO;
+import umc.study.web.dto.RestaurantResponseDTO;
 import umc.study.web.dto.UserRequestDTO;
 import umc.study.web.dto.UserResponseDTO;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 
 public class ReviewConverter {
@@ -37,12 +42,29 @@ public class ReviewConverter {
                 .build();
     }
 
-    public static ReviewResponseDTO.RestaurantReviewDTO toRestaurantReviewDTO(Review review) {
-        return ReviewResponseDTO.RestaurantReviewDTO.builder()
+    public static ReviewResponseDTO.UserReviewListDTO userReviewListDTO(Page<Review> reviewList){
+
+        List<ReviewResponseDTO.UserReviewDTO> userReviewDTOList = reviewList.stream()
+                .map(ReviewConverter::toUserReviewDTO).collect(Collectors.toList());
+
+        return ReviewResponseDTO.UserReviewListDTO.builder()
+                .isLast(reviewList.isLast())
+                .isFirst(reviewList.isFirst())
+                .totalPage(reviewList.getTotalPages())
+                .totalElements(reviewList.getTotalElements())
+                .listSize(userReviewDTOList.size())
+                .reviewList(userReviewDTOList)
+                .build();
+    }
+
+    public static ReviewResponseDTO.UserReviewDTO toUserReviewDTO (Review review) {
+        return ReviewResponseDTO.UserReviewDTO.builder()
                 .userId(review.getUser().getId())
+                .reviewId(review.getId())
+                .restaurantId(review.getRestaurant().getId())
                 .content(review.getContent())
                 .rate(review.getRate())
-                .createdAt(LocalDateTime.now())
+                .createdAt(review.getCreatedAt())
                 .build();
     }
 

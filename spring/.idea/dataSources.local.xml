@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="IU-251.23774.435">
-    <data-source name="DB_UMC@localhost" uuid="92e80b98-abbd-4e59-a3a9-fba292a909e1">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" />
+    <data-source name="db_umc@localhost" uuid="17152d8a-cc47-4fd5-96bc-b314c044befc">
+      <database-info product="MySQL" version="9.3.0" jdbc-version="4.2" driver-name="Amazon Web Services (AWS) Advanced JDBC Wrapper" driver-version="Amazon Web Services (AWS) Advanced JDBC Wrapper 2.3.7 ( Revision: 7591851e8da4e1c705ba232a8bd07824a5cfd276 )" dbms="MYSQL" exact-version="9.3.0" exact-driver-version="2.3">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+        <jdbc-catalog-is-schema>true</jdbc-catalog-is-schema>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
-      <schema-mapping />
-    </data-source>
-    <data-source name="DB_UMC@localhost" uuid="3438972d-bbf2-4c0a-ad27-9300a9b49382">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" />
-      <user-name>root</user-name>
-      <schema-mapping />
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema" qname="@" />
+        </introspection-scope>
+      </schema-mapping>
       <load-sources>user_and_system_sources</load-sources>
     </data-source>
   </component>

@@ -33,6 +33,9 @@ public enum ErrorStatus implements BaseErrorCode {
     // 위치 관련 에러
     LOCATION_NOT_FOUND(HttpStatus.BAD_REQUEST, "LOCATION4001", "존재하지 않는 위치 정보입니다."),
 
+    // 페이지 관련 에러
+    PAGE_NOT_VALID(HttpStatus.BAD_REQUEST, "PAGE4001", "페이지는 0보다 커야 합니다."),
+
     // 예시,,,
     ARTICLE_NOT_FOUND(HttpStatus.NOT_FOUND, "ARTICLE4001", "게시글이 없습니다."),
 

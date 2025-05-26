@@ -1,8 +1,12 @@
 package umc.study.service.ReviewService;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import umc.study.apiPayload.code.status.ErrorStatus;
 import umc.study.apiPayload.exception.handler.LocationHandler;
+import umc.study.apiPayload.exception.handler.PageHandler;
 import umc.study.apiPayload.exception.handler.RestaurantHandler;
+import umc.study.domain.Mission;
 import umc.study.domain.Restaurant;
 import umc.study.domain.User;
 import umc.study.repository.RestaurantRepository.RestaurantRepository;
@@ -44,11 +48,24 @@ public class ReviewQueryServiceImpl implements ReviewQueryService {
     }
 
     @Override
-    public List<Review> getReviewsByRestaurant(Long restaurantId) {
-        restaurantRepository.findById(restaurantId)
-                .orElseThrow(() -> new RestaurantHandler(ErrorStatus.RESTAURANT_NOT_FOUND));
+    public Page<Review> getUserReviewList(Long userId, Integer page) {
+        System.out.println(">>> 들어온 page: " + page); // ✅ 로그
+        // 페이지 유효성 검사
+        if (page == null || page < 1) {
+            System.out.println(">>> PAGE ERROR 발생"); // ✅ 로그
+            throw new PageHandler(ErrorStatus.PAGE_NOT_VALID);
+        }
 
-        return reviewRepository.findReviewsByRestaurantId(restaurantId);
+        // 검증된 페이지 값만 PageRequest 생성
+        int zeroBasedPage = page - 1; // 0 기반으로 변환
+        PageRequest pageRequest = PageRequest.of(zeroBasedPage, 10);
+
+        User user = userRepository.findById(1L)
+                .orElseThrow(() -> new RuntimeException("User not found"));
+
+        return reviewRepository.findAllByUser(user, pageRequest);
     }
+
+
 
 }

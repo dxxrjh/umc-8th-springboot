@@ -1,32 +1,44 @@
 package umc.study.service.UserMissionService;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import umc.study.apiPayload.code.status.ErrorStatus;
+import umc.study.apiPayload.exception.handler.PageHandler;
+import umc.study.domain.User;
+import umc.study.domain.enums.MissionStatus;
 import umc.study.domain.mapping.UserMission;
 import umc.study.repository.UserMissionRepository.UserMissionRepository;
-
-import java.util.List;
-import java.util.Optional;
+import umc.study.repository.UserRepository.UserRepository;
 
 @Service
 @RequiredArgsConstructor
 @Transactional(readOnly = true)
 public class UserMissionQueryServiceImpl implements UserMissionQueryService{
 
+    private final UserRepository userRepository;
     private final UserMissionRepository userMissionRepository;
 
     @Override
-    public Optional<UserMission> findUserMission(Long id) {
-        return userMissionRepository.findById(id);
-    }
+    public Page<UserMission> getUserMissionList(long userId, String status, Integer page) {
+        System.out.println(">>> 들어온 page: " + page); // ✅ 로그
+        // 페이지 유효성 검사
+        if (page == null || page < 1) {
+            System.out.println(">>> PAGE ERROR 발생"); // ✅ 로그
+            throw new PageHandler(ErrorStatus.PAGE_NOT_VALID);
+        }
 
-    @Override
-    public List<UserMission> findUserMissionsByIdAndStatus(long id, String status) {
-        List<UserMission> filteredUserMission = userMissionRepository.dynamicQueryWithBooleanBuilder(id, status);
+        // 검증된 페이지 값만 PageRequest 생성
+        int zeroBasedPage = page - 1; // 0 기반으로 변환
+        PageRequest pageRequest = PageRequest.of(zeroBasedPage, 10);
 
-        filteredUserMission.forEach(userMission -> System.out.println("UserMission: " + userMission));
+        User user = userRepository.findById(userId)
+                .orElseThrow(() -> new RuntimeException("User not found"));
 
-        return filteredUserMission;
+        MissionStatus missionStatus = MissionStatus.valueOf(status.toUpperCase());
+
+        return userMissionRepository.findAllByUserAndStatus(user, missionStatus, pageRequest);
     }
 }

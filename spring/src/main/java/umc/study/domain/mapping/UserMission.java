@@ -9,6 +9,7 @@ import umc.study.domain.enums.MissionStatus;
 
 @Entity
 @Getter
+@Setter
 @Builder
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
@@ -29,16 +30,6 @@ public class UserMission extends BaseEntity {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "mission_id")
     private Mission mission;
-
-    // user에 대한 getter 추가
-    public User getUser() {
-        return user;
-    }
-
-    // mission에 대한 getter 추가
-    public Mission getMission() {
-        return mission;
-    }
 
     @Override
     public String toString() {
